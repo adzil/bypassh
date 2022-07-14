@@ -16,7 +16,7 @@ go install github.com/adzil/bypassh@latest
 
 Then, add the following line to your VSCode configuration JSON file:
 
-```json
+```js
 {
     // ... Other config goes here ...
     
