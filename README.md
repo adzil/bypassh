@@ -47,6 +47,10 @@ If you have different distro name than `Ubuntu`, you need to make `bypassh.json`
 
 There's also configurable path for WSL and SSH binary (see `bypassh.exe -h` for more info) but for most cases you probably wouldn't have to touch it.
 
+## Known Bugs
+
+The Remote-SSH extension is stuck on establishing a connection when the remote host is not yet known even though the user already presses the "yes" option. This issue can be fixed by manual SSH through CLI, permanently add it to the known host list, and then try to reconnect again.
+
 ## WSL1 Support
 
 BypaSSH **will not work** with WSL1 because it requires WSL2 network mount from Windows (e.g. `\\wsl$\Ubuntu\`) that did not available on earlier version of WSL.
